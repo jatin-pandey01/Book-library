@@ -18,6 +18,7 @@ const SearchForm = () => {
       setResultTitle("Please Enter Something ...");
     } else {
       setSearchTerm(searchText.current.value);
+      console.log(searchText.current.value);
     }
 
     navigate("/book");
