@@ -45,6 +45,7 @@ const AppProvider = ({children}) => {
             setLoading(false);
         } catch(error){
             console.log(error);
+            setResultTitle("No Search Result Found!");
             setLoading(false);
         }
     }, [searchTerm]);
